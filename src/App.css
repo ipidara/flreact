@@ -1,0 +1,158 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 2px solid black;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
+
+.navpages a {
+  font-weight: bold;
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+.navpages a:hover {
+  text-decoration: underline;
+}
+
+.mainsection {
+  padding: 60px 0;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.loop-section {
+  position: relative;
+  flex: 1;
+  max-width: 500px;
+}
+
+.loop-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.loop-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.main-line {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.right-section {
+  flex: 1;
+  text-align: left;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.25rem;
+  max-width: 90%;
+}
+
+.search-btn {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.search-btn:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-section {
+    text-align: center;
+  }
+}
+
